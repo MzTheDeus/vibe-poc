@@ -9,15 +9,43 @@
       .card { max-width: 720px; padding: 24px; border: 1px solid #ddd; border-radius: 16px; }
       h1 { margin-top: 0; }
       code { background: #f6f6f6; padding: 2px 6px; border-radius: 6px; }
+      button { padding: 10px 14px; border-radius: 12px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: 600; }
+      button:active { transform: translateY(1px); }
+      .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid #eee; background: #fafafa; }
+      .muted { color: #555; }
     </style>
   </head>
   <body>
     <div class="card">
       <h1>Vibe Coding: Proof of Concept ✅</h1>
       <p>This site was built and published by a non-technical person, safely, using a step-by-step approval process.</p>
+
+      <div class="row" style="margin: 16px 0;">
+        <button id="btn">Increase confidence</button>
+        <span class="pill">Confidence: <strong id="count">0</strong></span>
+      </div>
+
+      <p class="muted">
+        This is intentionally “safe interactivity”: it runs only in your browser, uses no backend, stores no secrets,
+        and can’t expose user data.
+      </p>
+
       <p><strong>Status:</strong> Live on the public internet.</p>
-      <p><strong>Stack:</strong> <code>Static HTML</code> hosted on <code>GitHub Pages</code>.</p>
-      <p><em>Next:</em> we’ll add a tiny interactive feature (still safe) and a simple deploy checklist.</p>
+      <p><strong>Stack:</strong> <code>Static HTML</code> + tiny <code>JavaScript</code> hosted on <code>GitHub Pages</code>.</p>
+      <p><em>Next:</em> we’ll add a simple “Deploy Checklist” so you can repeat this workflow anytime.</p>
     </div>
+
+    <script>
+      // Safe client-side interactivity: no network calls, no storage, no secrets.
+      const btn = document.getElementById("btn");
+      const countEl = document.getElementById("count");
+      let count = 0;
+
+      btn.addEventListener("click", () => {
+        count += 1;
+        countEl.textContent = String(count);
+      });
+    </script>
   </body>
 </html>
