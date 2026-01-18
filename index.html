@@ -12,7 +12,7 @@
       button { padding: 10px 14px; border-radius: 12px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: 600; }
       button:active { transform: translateY(1px); }
       .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid #eee; background: #fafafa; }
+      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid #eee; background: #fafafa; text-decoration: none; color: inherit; }
       .muted { color: #555; }
     </style>
   </head>
@@ -22,6 +22,7 @@
       <p>This site was built and published by a non-technical person, safely, using a step-by-step approval process.</p>
 
       <div class="row" style="margin: 16px 0;">
+        <a class="pill" href="mailto:vibepoc@proton.me">Contact: vibepoc@proton.me</a>
         <button id="btn">Increase confidence</button>
         <span class="pill">Confidence: <strong id="count">0</strong></span>
       </div>
