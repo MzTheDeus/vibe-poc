@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo: Barber Shop</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 48px; line-height: 1.5; }
+      .wrap { max-width: 980px; margin: 0 auto; }
+      .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid #eee; background: #fafafa; }
+      .hero { margin-top: 18px; padding: 22px; border: 1px solid #ddd; border-radius: 16px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+      .card { border: 1px solid #eee; border-radius: 14px; padding: 14px; background: #fafafa; }
+      a.btn { padding: 10px 14px; border-radius: 12px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: 800; text-decoration: none; color: inherit; display: inline-block; }
+      .muted { color: #555; }
+      ul { padding-left: 18px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <div class="badge"><strong>Demo</strong> — not a real client</div>
+          <div class="badge"><strong>Public repo rule:</strong> no secrets, no customer data</div>
+        </div>
+        <div>
+          <a class="btn" href="./examples.html">Back to Examples</a>
+          <a class="btn" href="./service.html">Hire me</a>
+        </div>
+      </div>
+
+      <div class="hero">
+        <h1>Iron & Oak Barbers</h1>
+        <p class="muted">Sharp cuts. Clean fades. Walk in with chaos, leave with confidence.</p>
+        <p>
+          <a class="btn" href="mailto:vibepoc@proton.me?subject=Barber%20booking%20request&body=Hi!%20I%20want%20to%20book%20a%20barber%20appointment.%0A%0APreferred%20day/time:%0AService:%0AName:%0APhone%20(optional):%0A">Book by email</a>
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Services</h2>
+          <ul>
+            <li>Classic cut — 30 min</li>
+            <li>Skin fade — 45 min</li>
+            <li>Beard trim — 20 min</li>
+            <li>Cut + beard — 60 min</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Hours</h2>
+          <ul>
+            <li>Mon–Fri: 10:00–18:00</li>
+            <li>Sat: 11:00–16:00</li>
+            <li>Sun: Closed</li>
+          </ul>
+          <p class="muted">Demo hours — replace with real hours.</p>
+        </div>
+
+        <div class="card">
+          <h2>Location</h2>
+          <p class="muted">Norrköping (demo)</p>
+          <p class="muted">Add Google Maps link here in real version.</p>
+        </div>
+
+        <div class="card">
+          <h2>Why people come back</h2>
+          <ul>
+            <li>Consistent results</li>
+            <li>Clean, calm vibe</li>
+            <li>Fast booking</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top: 18px;">
+        Want one like this for your business? <a href="./request.html">Use the request template</a>.
+      </p>
+    </div>
+  </body>
+</html>
