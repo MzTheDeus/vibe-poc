@@ -1,3 +1,4 @@
+[![pages-build-deployment](https://github.com/MzTheDeus/vibe-poc/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/MzTheDeus/vibe-poc/actions/workflows/pages/pages-build-deployment)
 # Vibe POC (Safe Ship)
 
 This repo proves a non-technical person can publish real software safely using a step-by-step approval process.
